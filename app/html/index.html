@@ -3,41 +3,33 @@
     <head>
         <title>Mia's Website</title>
         <meta charset="utf-8"/>
-        <script
-            src="../bower_components/angular/angular.min.js">
-        </script>
-        <link href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css" rel="stylesheet" />
+        <script src="../bower_components/angular/angular.min.js"></script>
+        <script src="../bower_components/angular-route/angular-route.min.js"></script>
         <link href='https://fonts.googleapis.com/css?family=Roboto:500,300,700,400' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="../css/main.css"/>
-        <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
     </head>
     <body ng-app="myApp" ng-controller="myCtrl">
 
-        <header class="container">
-            <div class="row">
-                <h1 class="col-sm-8">{{title}}</h1>
-                <nav class="col-sm-4">
-                    <button class="btn btn-aboutMe" ng-click="goToAboutMe()">about me</button>
-                    <a class="btn btn-photos">photos</a>
-                    <a class="btn btn-links"> links </a>
-                </nav>
-            </div>
+        <header>
+            <h1>{{title}}</h1>
         </header>
-
-        <main ng-controller="myCtrl">
-            <img ng-src="{{homepageImg}}">
+        <main>
+            <div class="injection" ng-view></div>
         </main>
 
-        <footer>
-            <div class="container">
+        <div class="footer">
                 <h3>Created by Mia Froehling Gallier</h3>
-            </div>
-        </footer>
+        </div>
 
 
         <!-- Modules -->
         <script src="../js/app.js"></script>
         <!-- Controllers -->
         <script src="../js/controller.js"></script>
+        <script src="../js/home.js"></script>
+        <script src="../js/aboutme.js"></script>
+        <script src="../js/experience.js"></script>
+        <script src="../js/interests.js"></script>
+        <script src="../js/photos.js"></script>
     </body>
 </html> 
