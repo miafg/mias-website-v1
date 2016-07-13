@@ -16,7 +16,6 @@
     display: inline-block;
     align-content: center;
     text-align: center;
-    border: 3px;
 }
 
 p {
@@ -26,13 +25,14 @@ p {
 .pageName {
     position: absolute;
     margin: 0;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     vertical-align: bottom;
     width: 100%;
     text-align: center;
     top: 50%;
 }
 
-image {
+.image {
     margin:0;
     width: 100%;
     height: 100%;

@@ -17,9 +17,9 @@ app.config(function($routeProvider) {
             templateUrl: 'aboutMe.html',
             controller: 'aboutmeCtrl'
         })
-        .when('/interests', {
-            templateUrl: 'interests.html',
-            controller: 'interestsCtrl'
+        .when('/contact', {
+            templateUrl: 'contact.html',
+            controller: 'contactCtrl'
         })
         .when('/experience', {
             templateUrl: 'experience.html',
