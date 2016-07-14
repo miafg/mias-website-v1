@@ -3,9 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Photos</title>
-    <link rel="stylesheet" href="../css/photos.css">
+    <link rel="stylesheet" href="app/css/photos.css">
 </head>
 <body>
-
+    <table class="images">
+        <tbody ng-repeat="photo in photos">
+        <tr >
+            <td>{{photo}}</td>
+        </tr>
+        </tbody>
+    </div>
+    </table>
 </body>
 </html>

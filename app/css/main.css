@@ -18,7 +18,7 @@ header {
     position: relative;
     margin:0;
     display: block;
-    text-align: center;
+    text-align: left;
 }
 
 header h1 {
@@ -26,7 +26,8 @@ header h1 {
     display: inline-block;
     position: relative;
     font-size: 250%;
-
+    cursor: pointer;
+    margin-left: 100px;
     width: inherit;
     text-align: center;
 }
@@ -52,7 +53,7 @@ li {
     text-decoration: none;
     color: black;
     padding: 0;
-
+    cursor: pointer;
 }
 
 main {

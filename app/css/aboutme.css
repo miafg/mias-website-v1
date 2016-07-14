@@ -29,5 +29,6 @@ header {
 }
 
 header h1 {
+    cursor: pointer;
     margin-left: 100px;
 }

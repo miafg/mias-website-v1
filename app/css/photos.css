@@ -3,5 +3,11 @@ header {
 }
 
 header h1 {
+    cursor: pointer;
     margin-left: 100px;
+}
+
+img {
+    display: table-cell;
+    transform: scale(0.2,0.2);
 }

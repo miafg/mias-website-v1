@@ -2,44 +2,42 @@
  * Created by mgalli200 on 7/13/16.
  */
 app.controller('homeCtrl', function($scope) {
-    $scope.homepageImg1 = "../img/img1.jpg";
-    $scope.homepageImg2 = "../img/img2.jpg";
-    $scope.homepageImg3 = "../img/img3.jpg";
-    $scope.homepageImg4 = "../img/img4.jpg";
-    /*$scope.toggleImage = function(toggle, number) {
-        console.log("toggle " + toggle + " Number " + number);
-        switch (number) {
-            case 1:
-                if (toggle) {
-                    console.log()
-                        $scope.imageHovered1 = {'opacity': 0.5};
-                } else {
-                    $scope.imageHovered1 = {'opacity': 1};
-                }
+    $scope.homepageImg1 = "app/img/img1.jpg";
+    $scope.homepageImg2 = "app/img/img2.jpg";
+    $scope.homepageImg3 = "app/img/img3.jpg";
+    $scope.homepageImg4 = "app/img/img4.jpg";
+    navHome();
+
+});
+
+var navHome = function() {
+    var containers = document.getElementsByClassName("container");
+    for (var i = 0; i < containers.length; i++) {
+        var current = containers.item(i);
+        var text = current.getElementsByClassName("pageName").item(0).textContent;
+        switch (text) {
+            case "about me":
+                current.addEventListener('click', function() {
+                    window.location.href = "#/aboutme";
+                });
                 break;
-            case 2:
-                if (toggle) {
-                    $scope.imageHovered2 = {'opacity': 0.5};
-                } else {
-                    $scope.imageHovered2 = {'opacity': 1};
-                }
+            case "experience":
+                current.addEventListener('click', function() {
+                    window.location.href = "#/experience";
+                });
                 break;
-            case 3:
-                if (toggle) {
-                    $scope.imageHovered3 = {'opacity': 0.5};
-                } else {
-                    $scope.imageHovered3 = {'opacity': 1};
-                }
+            case "photos":
+                current.addEventListener('click', function() {
+                    window.location.href = "#/photos";
+                });
                 break;
-            case 4:
-                if (toggle) {
-                    $scope.imageHovered4 = {'opacity': 0.5};
-                } else {
-                    $scope.imageHovered4 = {'opacity': 1};
-                }
+            case "contact":
+                current.addEventListener('click', function() {
+                    window.location.href = "#/contact";
+                });
                 break;
             default:
                 break;
         }
-    };*/
-});
+    }
+};

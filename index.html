@@ -1,10 +1,42 @@
 <!DOCTYPE html>
-<html style="height:100%; width:100%">
-<head>
-    <meta charset="UTF-8">
-    <title>Mia's Website</title>
-</head>
-<body style="height: 100%; width:100%; left:0; margin: 0;">
-    <iframe src="app/html/index.html" style="height: 100%; width:100%; left:0; margin: 0;"frameborder="0"></iframe>
-</body>
-</html>
+<html> 
+    <head>
+        <title>Mia's Website</title>
+        <meta charset="utf-8"/>
+        <script src="app/bower_components/angular/angular.min.js"></script>
+        <script src="app/bower_components/angular-route/angular-route.min.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:500,300,700,400' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="app/css/main.css"/>
+    </head>
+    <body ng-app="myApp" ng-controller="myCtrl">
+
+        <header>
+
+            <h1 class="mainTitle">{{title}}</h1>
+            <ul class="nav-bar">
+                <li class="menu">About Me</li>
+                <li class="menu">Experience</li>
+                <li class="menu">Photos</li>
+                <li class="menu">Contact</li>
+            </ul>
+        </header>
+        <main>
+            <div class="injection" ng-view></div>
+        </main>
+
+        <div class="footer">
+                <h3>Created by Mia Froehling Gallier</h3>
+        </div>
+
+
+        <!-- Modules -->
+        <script src="app/js/app.js"></script>
+        <!-- Controllers -->
+        <script src="app/js/controller.js"></script>
+        <script src="app/js/home.js"></script>
+        <script src="app/js/aboutme.js"></script>
+        <script src="app/js/experience.js"></script>
+        <script src="app/js/contact.js"></script>
+        <script src="app/js/photos.js"></script>
+    </body>
+</html> 
