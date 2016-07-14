@@ -3,7 +3,7 @@
  */
 var app = angular.module('myApp', ['ngRoute']);
 
-app.config(function($routeProvider) {
+app.config(['$routeProvider', function($routeProvider) {
     $routeProvider
         .when('/', {
             templateUrl: 'home.html',
@@ -26,4 +26,4 @@ app.config(function($routeProvider) {
             controller: 'experienceCtrl'
         })
         .otherwise({redirectTo: '/'});
-});
+}]);

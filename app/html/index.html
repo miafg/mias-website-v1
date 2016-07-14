@@ -11,7 +11,14 @@
     <body ng-app="myApp" ng-controller="myCtrl">
 
         <header>
-            <h1>{{title}}</h1>
+
+            <h1 ><a class="title" href="#/"></a>{{title}}</h1>
+            <ul class="nav-bar">
+                <li><a class="menu" href="#/aboutme"> About Me </a></li>
+                <li><a class="menu" href="#/experience"> Experience </a></li>
+                <li><a class="menu" href="#/photos"> Photos </a></li>
+                <li><a class="menu" href="#/contact"> Contact </a></li>
+            </ul>
         </header>
         <main>
             <div class="injection" ng-view></div>
