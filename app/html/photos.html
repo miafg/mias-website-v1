@@ -6,13 +6,27 @@
     <link rel="stylesheet" href="app/css/photos.css">
 </head>
 <body>
-    <table class="images">
-        <tbody ng-repeat="photo in photos">
-        <tr >
-            <td>{{photo}}</td>
-        </tr>
-        </tbody>
-    </div>
-    </table>
+    <figure >
+        <h2>Mesa Verde July, 2016</h2>
+        <img ng-repeat="img in mesaVerde" ng-src={{img}}>
+    </figure>
+    <figure >
+        <h2>Arizona June, 2016</h2>
+        <img ng-repeat="img in arizona" ng-src={{img}}>
+    </figure>
+    <figure >
+        <h2>Crested Butte June, 2016</h2>
+        <img ng-repeat="img in crestedButte" ng-src={{img}}>
+    </figure>
+    <figure >
+        <h2>Twin Sisters Hike June, 2016</h2>
+        <img ng-repeat="img in twinSisters" ng-src={{img}}>
+    </figure>
+    <figure >
+        <h2>Aspen May, 2016</h2>
+        <img ng-repeat="img in aspen" ng-src={{img}}>
+    </figure>
+
+
 </body>
 </html>
