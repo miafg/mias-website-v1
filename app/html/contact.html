@@ -4,8 +4,54 @@
     <meta charset="UTF-8">
     <title>Contact</title>
     <link rel="stylesheet" href="app/css/contact.css">
+    <link rel="stylesheet" href="app/font-awesome-4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="app/css/buttons.css">
 </head>
 <body>
-
+    <img ng-src={{photo}}>
+    <div class="social_nav_bar">
+        <a class="link" href="https://www.facebook.com/Miafroehlinggallier" target="_blank">
+            <span class="fa-stack fa-1x">
+                <i class= "fa fa-facebook fa-stack-1x" aria-hidden="true"></i>
+                <i class= "fa fa-circle-thin fa-stack-2x" aria-hidden="true"></i>
+            </span>
+        </a>
+        <a class="link" href="https://www.linkedin.com/in/mia-froehling-gallier-03761495" target="_blank">
+            <span class="fa-stack fa-1x">
+                <i class= "fa fa-linkedin fa-stack-1x" aria-hidden="true"></i>
+                <i class= "fa fa-circle-thin fa-stack-2x" aria-hidden="true"></i>
+            </span>
+        </a>
+        <a class="link" href="https://github.com/miafg" target="_blank">
+            <span class="fa-stack fa-1x">
+                <i class= "fa fa-github fa-stack-1x" aria-hidden="true"></i>
+                <i class= "fa fa-circle-thin fa-stack-2x" aria-hidden="true"></i>
+            </span>
+        </a>
+        <a class="link" ng-href={{email}}>
+            <span class="fa-stack fa-1x">
+                <i class= "fa fa-envelope-o fa-stack-1x" aria-hidden="true"></i>
+                <i class= "fa fa-circle-thin fa-stack-2x" aria-hidden="true"></i>
+            </span>
+        </a>
+    </div>
+    <p> Contact me on social media, use the form below or send me an email! </p>
+    <form action="app/email.php">
+        <div class="formElem">
+            <label><b>Email*</b></label>
+            <input type="text" name="email">
+        </div>
+        <div class="formElem">
+            <label><b>Subject*</b></label>
+            <input type="text" name="subject">
+        </div>
+        <div class="formElem">
+            <label><b>Message*</b></label>
+            <textarea class="message" name="message"> </textarea>
+        </div>
+        <div class="button-wrapper">
+        <input class=" submit button button-pill button-primary" type="submit">
+        </div>
+    </form>
 </body>
 </html>
