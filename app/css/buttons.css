@@ -1342,7 +1342,7 @@
 * displayed edge to edge
 */
 .button-group {
-  *zoom: 1;
+  zoom: 1;
   position: relative;
   display: inline-block; }
   .button-group:after, .button-group:before {
