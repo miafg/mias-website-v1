@@ -65,3 +65,7 @@ label {
 .button-wrapper {
     padding-top: 10px;
 }
+
+header h1 {
+    margin-left: 100px;
+}

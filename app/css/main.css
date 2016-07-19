@@ -27,7 +27,6 @@ header h1 {
     position: relative;
     font-size: 250%;
     cursor: pointer;
-    margin-left: 100px;
     width: inherit;
     text-align: center;
 }
