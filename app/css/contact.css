@@ -3,7 +3,7 @@ body {
 }
 
 img {
-    height: 400px;
+    height: 450px;
     width: 100%;
 }
 
@@ -20,6 +20,7 @@ img {
 
 p {
     padding-top: 5px;
+    padding-bottom: 5px;
     width: 50%;
     margin: 0 auto 0 auto;
 }
