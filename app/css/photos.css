@@ -1,11 +1,28 @@
 
 img {
-    display: inline-block;
     border: none;
-    height: auto;
+    height: 100%;
     margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+    max-width: 100%;
+    transition: all 0.5s;
+}
+
+.item {
+    display: inline-block;
     width: calc(25%);
-    vertical-align: middle;
+    height: auto;
+    margin:0;
+    padding:0;
+    border:0;
+    overflow: hidden;
+}
+
+img:hover {
+    overflow: hidden;
+    transform: scale(1.1);
 }
 
 figure {
@@ -13,7 +30,6 @@ figure {
     padding: 0;
     border: 0;
     flex-wrap: wrap;
-    justify-content: space-between;
 
 }
 
