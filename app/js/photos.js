@@ -38,4 +38,5 @@ app.controller('photosCtrl', function($scope) {
 
         $scope.crestedButte.push(dirCrested + "img" + i + ".jpg");
     }
+    
 });

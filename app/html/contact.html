@@ -36,22 +36,31 @@
         </a>
     </div>
     <p> Contact me on social media, use the form below or send me an email! </p>
-    <form action="app/email.php">
+    <form id="contactform" method="POST" action="//formspree.io/miaf@sas.upenn.edu">
+        <div class="formElem">
+            <label><b>First Name*</b></label>
+            <input class="input" type="text" name="firstname">
+        </div>
+        <div class="formElem">
+            <label><b>Last Name*</b></label>
+            <input class="input"  type="text" name="lastname">
+        </div>
         <div class="formElem">
             <label><b>Email*</b></label>
-            <input type="text" name="email">
+            <input class="input" type="text" name="email">
         </div>
         <div class="formElem">
             <label><b>Subject*</b></label>
-            <input type="text" name="subject">
+            <input class="input" type="text" name="_subject">
         </div>
         <div class="formElem">
             <label><b>Message*</b></label>
-            <textarea class="message" name="message"> </textarea>
+            <textarea class="input message" name="message"> </textarea>
         </div>
         <div class="button-wrapper">
-        <input class=" submit button button-pill button-primary" type="submit">
+            <input ng-click="allFields()" id="submit" class=" submit button button-pill button-primary" value="Submit">
         </div>
+        <input type="text" name="_gotcha" style="display: none">
     </form>
 </body>
 </html>

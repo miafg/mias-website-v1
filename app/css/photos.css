@@ -5,34 +5,45 @@ img {
     margin: 0;
     padding: 0;
     width: 100%;
-    overflow: hidden;
-    max-width: 100%;
-    transition: all 0.5s;
+    max-height: 100%;
+    vertical-align: middle;
+    -webkit-transition: all 1s ease; /* Safari and Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -ms-transition: all 1s ease; /* IE 9 */
+    -o-transition: all 1s ease;
+    transition: all 1s;
+
 }
 
 .item {
-    display: inline-block;
+    display: inline-table;
     width: calc(25%);
     height: auto;
+    overflow: hidden;
     margin:0;
     padding:0;
     border:0;
-    overflow: hidden;
-}
+    font-size: 0;
+}   
 
 img:hover {
-    overflow: hidden;
-    transform: scale(1.1);
+    border: none;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    transform: scale(1.2);
 }
 
 figure {
     margin:0;
     padding: 0;
     border: 0;
-    flex-wrap: wrap;
-
+    display: block;
 }
 
 header h1 {
     margin-left: 100px;
 }
+
