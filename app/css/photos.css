@@ -16,7 +16,7 @@ img {
 }
 
 .item {
-    display: inline-table;
+    display: inline-block;
     width: calc(25%);
     height: auto;
     overflow: hidden;
