@@ -1,11 +1,12 @@
 img {
     border: 0;
     height: auto;
+    top:2px;
     margin: 0 auto 0 auto;
     padding: 0;
     width: 100%;
     vertical-align: bottom;
-    transition: all 1s;
+    transition: all 1s ease;
 }
 
 .item {
@@ -16,6 +17,7 @@ img {
     margin:0 auto 0 auto;
     padding:0;
     border:0;
+    -webkit-backface-visibility: hidden;
     font-size: 0;
     vertical-align: bottom;
 }   
@@ -25,9 +27,12 @@ img:hover {
     margin: 0 auto 0 auto;
     padding: 0;
     transform: scale(1.2);
+    -webkit-transform: scale(1.2); /** Chrome & Safari **/
+    -o-transform: scale(1.2); /** Opera **/
+    -moz-transform: scale(1.2); /** Firefox **/
 }
 
-figure {
+.figure {
     margin:0;
     padding: 0;
     border: 0;
