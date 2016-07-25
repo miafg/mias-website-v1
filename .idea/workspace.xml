@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f17e618-52f9-4e69-bdd5-f5dc7a18a6ff" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/css/messageSent.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/html/messageSent.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/js/messageSent.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/html/contact.html" afterPath="$PROJECT_DIR$/app/html/contact.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/app.js" afterPath="$PROJECT_DIR$/app/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/contact.js" afterPath="$PROJECT_DIR$/app/js/contact.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="angular-myOwnWebsite.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,11 +42,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contact.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="contact.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/html/contact.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="795">
-              <caret line="53" column="43" selection-start-line="53" selection-start-column="43" selection-end-line="53" selection-end-column="43" />
+            <state relative-caret-position="196">
+              <caret line="63" column="49" selection-start-line="63" selection-start-column="49" selection-end-line="63" selection-end-column="49" />
               <folding>
                 <element signature="n#style#0;n#input#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -70,7 +64,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="messageSent.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="messageSent.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/html/messageSent.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
@@ -194,9 +188,9 @@
         <option value="$PROJECT_DIR$/app/js/messagesSent.js" />
         <option value="$PROJECT_DIR$/app/js/messageSent.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/app/html/contact.html" />
         <option value="$PROJECT_DIR$/app/css/messageSent.css" />
         <option value="$PROJECT_DIR$/app/html/messageSent.html" />
+        <option value="$PROJECT_DIR$/app/html/contact.html" />
       </list>
     </option>
   </component>
@@ -777,12 +771,12 @@
       <workItem from="1468865505157" duration="5000" />
       <workItem from="1468873781647" duration="7667000" />
       <workItem from="1468945743024" duration="35688000" />
-      <workItem from="1469219548131" duration="2876000" />
+      <workItem from="1469219548131" duration="3015000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117299000" />
+    <option name="totallyTimeSpent" value="117438000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="11" y="23" width="1203" height="603" extended-state="0" />
@@ -1151,21 +1145,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/html/contact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="53" column="43" selection-start-line="53" selection-start-column="43" selection-end-line="53" selection-end-column="43" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/html/messageSent.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="56" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="56" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/html/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="63" column="49" selection-start-line="63" selection-start-column="49" selection-end-line="63" selection-end-column="49" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
