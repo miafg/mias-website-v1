@@ -29,6 +29,10 @@ app.config(['$routeProvider', function($routeProvider) {
             templateUrl: 'app/html/experience.html',
             controller: 'experienceCtrl'
         })
+        .when('/messagesent', {
+            templateUrl: 'app/html/messageSent.html',
+            controller: 'messageSentCtrl'
+        })
         .otherwise({redirectTo: '/'});
 }]);
 
