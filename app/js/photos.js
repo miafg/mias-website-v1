@@ -9,6 +9,7 @@ app.controller('photosCtrl', function($scope) {
     $scope.mesaVerde = [];
     $scope.albert = [];
     $scope.conundrum = [];
+    $scope.grays = [];
     var dirAsp = "app/img/aspen/";
     var dirTwinSis = "app/img/twin\ sisters/";
     var dirCrested = "app/img/crested\ butte/";
@@ -16,6 +17,7 @@ app.controller('photosCtrl', function($scope) {
     var dirMesaVerde = "app/img/mesa\ verde/";
     var dirAlbert = "app/img/albert/";
     var dirConundrum = "app/img/conundrum/";
+    var dirGrays = "app/img/grays\ and\ torreys/";
     for (var i = 1; i < 15; i++) {
         if (i < 4) {
             $scope.twinSisters.push(dirTwinSis + "img" + i + ".jpg");
@@ -27,6 +29,7 @@ app.controller('photosCtrl', function($scope) {
             $scope.arizona.push(dirArizona + "img" + i + ".jpg");
         }
         if (i < 8) {
+            $scope.grays.push(dirGrays + "img" + i + ".jpg");
             $scope.conundrum.push(dirConundrum + "img" + i + ".jpg");
         }
         if (i < 9) {
