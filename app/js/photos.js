@@ -10,6 +10,7 @@ app.controller('photosCtrl', function($scope) {
     $scope.albert = [];
     $scope.conundrum = [];
     $scope.grays = [];
+    $scope.holyCross = [];
     var dirAsp = "app/img/aspen/";
     var dirTwinSis = "app/img/twin\ sisters/";
     var dirCrested = "app/img/crested\ butte/";
@@ -18,7 +19,8 @@ app.controller('photosCtrl', function($scope) {
     var dirAlbert = "app/img/albert/";
     var dirConundrum = "app/img/conundrum/";
     var dirGrays = "app/img/grays\ and\ torreys/";
-    for (var i = 1; i < 15; i++) {
+    var dirHolyCross = "app/img/mt\ holy\ cross/";
+    for (var i = 1; i < 17; i++) {
         if (i < 4) {
             $scope.twinSisters.push(dirTwinSis + "img" + i + ".jpg");
         }
@@ -38,8 +40,12 @@ app.controller('photosCtrl', function($scope) {
         if (i < 11) {
             $scope.albert.push(dirAlbert + "img" + i + ".jpg");
         }
-
-        $scope.crestedButte.push(dirCrested + "img" + i + ".jpg");
+        if (i < 15) {
+            $scope.crestedButte.push(dirCrested + "img" + i + ".jpg");
+        }
+        if (i < 17) {
+            $scope.holyCross.push(dirHolyCross + "img" + i + ".jpg");
+        }
     }
     
 });
