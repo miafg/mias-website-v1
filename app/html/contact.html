@@ -39,29 +39,29 @@
     <form id="contactform" method="POST" action="//formspree.io/miaf@sas.upenn.edu">
         <div class="formElem">
             <label><b>First Name*</b></label>
-            <input class="input" type="text" name="firstname">
+            <input class="input" type="text" name="firstname" required>
         </div>
         <div class="formElem">
             <label><b>Last Name*</b></label>
-            <input class="input"  type="text" name="lastname">
+            <input class="input"  type="text" name="lastname" required>
         </div>
         <div class="formElem">
             <label><b>Email*</b></label>
-            <input class="input" type="text" name="email">
+            <input class="input" type="text" name="email" required>
         </div>
         <div class="formElem">
             <label><b>Subject*</b></label>
-            <input class="input" type="text" name="_subject">
+            <input class="input" type="text" name="_subject" required>
         </div>
         <div class="formElem">
             <label><b>Message*</b></label>
-            <textarea class="input message" name="message"> </textarea>
+            <textarea class="input message" name="message" required> </textarea>
         </div>
         <div class="button-wrapper">
             <input ng-click="allFields()" id="submit" class=" submit button button-pill button-primary" value="Submit" readonly>
         </div>
         <input type="text" name="_gotcha" style="display: none">
-        <input type="hidden" name="_next" value="/#/messagesent">
+        <input type="hidden" name="_next" value={{url}}>
     </form>
 </body>
 </html>

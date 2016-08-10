@@ -23,3 +23,7 @@ p {
     top: 50%;
     color: white;
 }
+
+main {
+    height: auto;
+}

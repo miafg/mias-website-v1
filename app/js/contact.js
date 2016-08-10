@@ -3,16 +3,16 @@
  */
 app.controller('contactCtrl', function($scope, $window) {
     $scope.photo = "app/img/hanging_lake.jpg";
+    $scope.url = $window.location.href;
+    $scope.url = $scope.url.substr(0, $scope.url.length - 7);
+    $scope.url += "messagesent";
+    console.log($scope.url);
     $scope.allFields = function() {
         var passes = true;
         var fillIn = document.getElementsByClassName("input");
         for (var i = 0; i < fillIn.length; i++) {
             var input = fillIn[i].value;
             var field = fillIn[i].name;
-            if (field == "message") {
-                console.log("THIS IS ThE MESSAGE:" + "**" + input + "**");
-            }
-            console.log(field);
             if (input.length == 0) {
                 switch (field) {
                     case "firstname":
@@ -44,6 +44,7 @@ app.controller('contactCtrl', function($scope, $window) {
         if (passes) {
             var submitButton = document.getElementById("submit");
             submitButton.setAttribute('type', 'submit');
+            submitButton.click();
         }
 
     };
